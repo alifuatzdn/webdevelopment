@@ -1,0 +1,149 @@
+body {
+  margin: 0px;
+  font-family: "Oswald";
+  color: white;
+  background-color: rgb(75, 75, 75);
+}
+
+.header-part {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 47, 47);
+  font-size: 25px;
+}
+
+.search-button {
+  background-color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  border: 3px solid black;
+}
+
+.search-section {
+  gap: 30px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#year {
+  padding: 5px 5px;
+  background-color: white;
+  font-size: 20px;
+  margin-left: 5px;
+  border: 3px solid black;
+}
+
+#search-input {
+  padding: 5px 5px;
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: rgb(228, 228, 228);
+  border: 3px solid black;
+  margin-left: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#results {
+  justify-content: center;
+  margin: 20px 100px;
+  overflow-wrap: break-word;
+}
+
+.movie-info-part {
+  margin: 10px 0px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  padding: 15px;
+  border: 2px solid #000000;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.movie-info-part img {
+  max-width: 300px;
+  margin-right: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.info-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating {
+  background-color: orange;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.genre {
+  display: inline-block;
+  background-color: rgb(43, 43, 43);
+  padding: 2px 5px;
+  border-radius: 10px;
+  margin-left: -3px;
+}
+
+.infos {
+  margin-bottom: 10px;
+  font-family: "Lato";
+}
+
+.language {
+  color: orange;
+  font-family: "Lato";
+  margin-bottom: 10px;
+}
+
+.awards {
+  font-family: "Lato";
+}
+
+#canva {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .movie-info-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .movie-info-part img {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

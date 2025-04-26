@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>BINARY CONVERTER</h1>
+      <form id="form">
+        <label for="number">Select the display bit:</label>
+        <select id="bit-select">
+          <option value="8">8-bit</option>
+          <option value="16">16-bit</option>
+          <option value="32">32-bit</option>
+        </select>
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" name="number" min="0">
+        <button type="submit" id="submit">CONVERT</button>
+        <div id="result"></div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
